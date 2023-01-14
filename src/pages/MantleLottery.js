@@ -62,6 +62,7 @@ const MantleLottery = () => {
   return (
     <div className="container">
       <div className="section">
+        <hr className="dash-divider"></hr>
         <div className="heading-wrapper">
           <h1 className="heading-primary">🎊 The Mantle Testnet Lottery 🚀</h1>
           <p>{error}</p>
@@ -76,37 +77,27 @@ const MantleLottery = () => {
             .
           </p>
           <p className="heading-text">
-            Only the contract deployer can choose a winner.
+            Only the contract deployer can choose a winner (aka me 😏)
           </p>
           <p className="heading-text">
-            This contract was deployed by me{" "}
-            <a
-              target="_blank"
-              href="https://explorer.testnet.mantle.xyz/tx/0x365d7650a39873fc5cb0d99eeaf39b3f40797bb184c73546741f4921f30b450e"
-            >
-              (tx details)
-            </a>
-            . If you're waiting for the lottery to be called, you can ping me on{" "}
+            If you want the lottery to drawn, ping me on{" "}
             <a target="_blank" href="https://twitter.com/midroni">
               Twitter
             </a>
-            .
+            !
           </p>
           <button className="form-btn" onClick={connectWalletHandler}>
             Connect Wallet
           </button>
         </div>
+        <hr className="dash-divider"></hr>
         <div className="lottery-ui grid grid--2-cols">
-          <div>
-            <LotteryInstructions
-              lottery={lottery}
-              web3={web3}
-              fetchData={fetchData}
-            />
-          </div>
-          <div>
-            <LotteryDashboard balance={balance} players={players} />
-          </div>
+          <LotteryInstructions
+            lottery={lottery}
+            web3={web3}
+            fetchData={fetchData}
+          />
+          <LotteryDashboard balance={balance} players={players} />
         </div>
       </div>
     </div>

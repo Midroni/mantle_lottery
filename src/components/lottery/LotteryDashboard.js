@@ -4,7 +4,7 @@ import EntrantProfile from "./EntrantProfile";
 
 const LotteryDashboard = ({ balance, players }) => {
   return (
-    <div className="">
+    <div className="lottery-dash">
       <div className="lottery-card" id="prize-card">
         <p className="card-title">Current Pool</p>
         <span className="prize-amount">{balance} $BIT</span>
