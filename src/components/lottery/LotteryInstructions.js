@@ -82,7 +82,8 @@ const LotteryInstructions = ({ lottery, web3, fetchData }) => {
           a pseudo-random winner
           <i>
             <p className="list-callout">
-              Please note that this smart contract has no concept of proportions{" "}
+              Please note that this smart contract has no concept of
+              proportional odds{" "}
             </p>
           </i>
         </li>

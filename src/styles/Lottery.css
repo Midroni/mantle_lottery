@@ -144,6 +144,7 @@
 
 .heading-text {
   font-size: 1.6rem;
+  line-height: 2rem;
   margin: 1.2rem 3.2rem;
   overflow: hidden;
   text-overflow: ellipsis;
