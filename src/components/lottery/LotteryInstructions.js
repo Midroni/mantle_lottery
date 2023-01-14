@@ -79,7 +79,12 @@ const LotteryInstructions = ({ lottery, web3, fetchData }) => {
         <li>Click "Enter" to submit your transaction to Mantle Network!</li>
         <li>
           At some time in the future, I will trigger the smart contract to pick
-          a random winner
+          a pseudo-random winner
+          <i>
+            <p className="list-callout">
+              Please note that this smart contract has no concept of proportions{" "}
+            </p>
+          </i>
         </li>
       </ol>
       <form className="form-group">

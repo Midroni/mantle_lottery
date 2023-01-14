@@ -80,7 +80,8 @@ const MantleLottery = () => {
             Only the contract deployer can choose a winner (aka me 😏)
           </p>
           <p className="heading-text">
-            If you want the lottery to drawn, ping me on{" "}
+            If you have any questions or simply just want the lottery to be
+            drawn ping me on{" "}
             <a target="_blank" href="https://twitter.com/midroni">
               Twitter
             </a>
