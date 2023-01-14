@@ -150,3 +150,10 @@ code {
     padding: 0 2rem;
   }
 }
+
+/* BELOW 480px */
+@media (max-width: 28em) {
+  .grid {
+    padding: 0;
+  }
+}

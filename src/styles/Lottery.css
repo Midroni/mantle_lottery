@@ -145,6 +145,8 @@
 .heading-text {
   font-size: 1.6rem;
   margin: 1.2rem 3.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 a:link,
 a:visited {
@@ -238,7 +240,7 @@ a:hover {
   }
 
   .entrant-profile {
-    width: 42rem;
+    width: auto;
     justify-content: center;
   }
 
@@ -254,7 +256,6 @@ a:hover {
   }
 
   .entrant-profile {
-    width: 36rem;
     justify-content: center;
   }
 
@@ -303,8 +304,8 @@ a:hover {
   }
 
   .entrant-profile {
-    width: auto;
     justify-content: center;
+    gap: 0.4rem;
   }
   .row {
     margin: auto;
@@ -318,5 +319,42 @@ a:hover {
 @media (max-width: 33em) {
   .profile-address {
     font-size: 0.8rem;
+  }
+  .instructions-list {
+    font-size: 1.4rem;
+  }
+}
+
+/* BELOW 480px */
+@media (max-width: 30em) {
+  .profile-address {
+    font-size: 0.8rem;
+  }
+  .instructions-list {
+    font-size: 1.4rem;
+  }
+  .form-input::placeholder {
+    font-size: 1.4rem;
+  }
+  .form-input {
+    font-size: 1.4rem;
+  }
+}
+/* BELOW 480px */
+@media (max-width: 28em) {
+  .profile-address {
+    font-size: 0.7rem;
+  }
+}
+
+/* BELOW 400px */
+@media (max-width: 25em) {
+  .form-btn {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .instructions-list {
+    padding: 0 0.4rem 0 1.2rem;
   }
 }
