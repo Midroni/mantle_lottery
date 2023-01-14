@@ -63,13 +63,38 @@ const MantleLottery = () => {
     <div className="container">
       <div className="section">
         <div className="heading-wrapper">
-          <h1 className="heading-primary">Mantle Lottery</h1>
+          <h1 className="heading-primary">🎊 The Mantle Testnet Lottery 🚀</h1>
           <p>{error}</p>
-          <p>
-            The contract address is 0x18BBda840BE36fe6B081b87bD51F91D0A81E8413
+          <p className="heading-text">
+            This contract lives at{" "}
+            <a
+              target="_blank"
+              href="https://explorer.testnet.mantle.xyz/address/0x18BBda840BE36fe6B081b87bD51F91D0A81E8413"
+            >
+              0x18BBda840BE36fe6B081b87bD51F91D0A81E8413
+            </a>
+            .
           </p>
-          <p>A winner can only be picked by the following address: {manager}</p>
-          <button onClick={connectWalletHandler}>Connect Wallet</button>
+          <p className="heading-text">
+            Only the contract deployer can choose a winner.
+          </p>
+          <p className="heading-text">
+            This contract was deployed by me{" "}
+            <a
+              target="_blank"
+              href="https://explorer.testnet.mantle.xyz/tx/0x365d7650a39873fc5cb0d99eeaf39b3f40797bb184c73546741f4921f30b450e"
+            >
+              (tx details)
+            </a>
+            . If you're waiting for the lottery to be called, you can ping me on{" "}
+            <a target="_blank" href="https://twitter.com/midroni">
+              Twitter
+            </a>
+            .
+          </p>
+          <button className="form-btn" onClick={connectWalletHandler}>
+            Connect Wallet
+          </button>
         </div>
         <div className="lottery-ui grid grid--2-cols">
           <div>

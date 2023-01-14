@@ -38,30 +38,68 @@ const LotteryInstructions = ({ lottery, web3, fetchData }) => {
     <div className="lottery-card" id="instructions-card">
       <p className="card-title">How it works</p>
       <ol className="instructions-list">
-        <li>Connect your Metamask to Mantle Testnet</li>
         <li>
-          Enter an amount of $BIT to submit to the lottery in the form below
-          (must be > 0.001)
+          Connect your Metamask to{" "}
+          <a
+            target="_blank"
+            href="https://chainlist.org/?search=Mantle&testnets=true"
+          >
+            Mantle Testnet
+          </a>{" "}
+          <i>
+            <p className="list-callout">
+              If this is your first time using Mantle or MetaMask, check out our{" "}
+              <a
+                target="_blank"
+                href="https://mirror.xyz/0xmantle.eth/qIDSO3AsFnXmwVLSYfODZWOpK_0K01UdvR3ZxUCtCjw"
+              >
+                Complete Onboarding Guide
+              </a>
+            </p>
+          </i>
         </li>
         <li>
-          Hit "Enter" below to send your testnet $BIT to the smart contract
+          Enter an amount of $BIT in the field below to submit it to the lottery
+          (min = 0.001 $BIT)
+          <i>
+            <p className="list-callout">
+              $BIT is the native token on Mantle. If you need test tokens you
+              can visit our{" "}
+              <a target="_blank" href="https://faucet.testnet.mantle.xyz/">
+                Testnet Faucet
+              </a>{" "}
+              or dm me your address on{" "}
+              <a target="_blank" href="https://twitter.com/midroni">
+                Twitter
+              </a>{" "}
+              for an airdrop
+            </p>
+          </i>
         </li>
-        <li>The smart contract will pick a random winner</li>
+        <li>Click "Enter" to submit your transaction to Mantle Network!</li>
+        <li>
+          At some time in the future, I will trigger the smart contract to pick
+          a random winner
+        </li>
       </ol>
       <form className="form-group">
-        <p className="form-feedback">{status}</p>
+        <i>
+          <p className="form-feedback">{status}</p>
+        </i>
         <input
           onChange={(event) => setValue(event.target.value)}
           placeholder="Submit $BIT"
           className="form-input"
         ></input>
-        <button onClick={submitEntry} className="form-btn">
-          Enter
-        </button>
+        <div className="form-btn-group">
+          <button onClick={submitEntry} className="form-btn">
+            Enter
+          </button>
+          <button onClick={pickWinner} className="form-btn">
+            Pick a Winner
+          </button>
+        </div>
       </form>
-      <button onClick={pickWinner} className="form-btn">
-        Pick a Winner
-      </button>
     </div>
   );
 };
