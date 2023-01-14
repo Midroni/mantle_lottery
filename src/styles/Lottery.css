@@ -1,0 +1,168 @@
+.lottery-ui {
+  align-items: center;
+}
+
+.lottery-card {
+  padding: 1.6rem 0.8rem;
+  margin-bottom: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  border-radius: 12px;
+}
+
+.card-title {
+  font-size: 2rem;
+}
+
+/*******************************/
+/*       CARD COMPONENTS       */
+/*******************************/
+
+#leaderboard {
+  background-color: #7048e8;
+  box-shadow: 0 1rem 1rem rgba(112, 72, 232, 0.3);
+}
+
+#prize-card {
+  background-color: #ff4688;
+  box-shadow: 0 1rem 1rem rgba(255, 70, 135, 0.3);
+}
+
+#instructions-card {
+  background-color: rgba(143, 119, 214, 0.2);
+  box-shadow: 0 1rem 1rem rgba(112, 72, 232, 0.3);
+}
+
+/*******************************/
+/*        CARD CONTENT         */
+/*******************************/
+
+.prize-amount {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.instructions-list {
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  padding: 0.8rem 0.8rem 0.8rem 1.6rem;
+}
+
+.instructions-list li {
+  margin: 0.8rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-feedback {
+  height: 1.6rem;
+}
+
+.form-input {
+  font: inherit;
+  width: 80%;
+  padding-top: 0.8rem;
+  margin-bottom: 1.6rem;
+
+  border: 0;
+  position: relative;
+
+  color: #fff;
+  font-size: 1.6rem;
+  background: transparent;
+  border-bottom: 1px solid #555;
+  transition: all 0.3s;
+}
+
+.form-input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #8f77d6;
+}
+
+.form-btn {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 11px;
+
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 0.8rem 2.4rem;
+  border: none;
+  color: #fff;
+  background-color: #ff4688;
+  box-shadow: 0 0.6rem 1rem rgba(204, 56, 108, 0.4);
+
+  transition: all 0.3s;
+}
+
+.form-btn:hover {
+  transform: translateY(-0.2rem);
+  background-color: #cc386d;
+  box-shadow: 0 0.2rem 2rem rgba(204, 56, 108, 0.4);
+  border: none;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  border-radius: 9px;
+
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.8rem 1.6rem;
+  color: #fff;
+}
+
+.btn--full,
+.btn--full:link,
+.btn--full:visited {
+  background-color: #7048e8;
+}
+
+/*******************************/
+/*       ENTRANT  PROFILE      */
+/*******************************/
+
+.row {
+  /* 1200px */
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.entrant-profile {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 0.8rem;
+  background-color: #4c319d;
+  border-radius: 9px;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.entrant-profile:hover {
+  transform: translateY(-0.4rem);
+}
+
+.profile-address {
+  color: #fff;
+  font-family: monospace;
+  font-size: 1.2rem;
+}
+.profile-contribution {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.profile-contribution span {
+  font-size: 1.6rem;
+}
