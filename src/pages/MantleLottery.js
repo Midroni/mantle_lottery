@@ -55,7 +55,7 @@ const MantleLottery = () => {
         setError(err.message);
       }
     } else {
-      setError("Please install Metamask");
+      setError("Please install Metamask (mobile not supported");
     }
   };
 
