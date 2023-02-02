@@ -103,9 +103,10 @@ const LotteryInstructions = ({ lottery, web3, fetchData }) => {
           <button onClick={submitEntry} className="form-btn">
             Enter
           </button>
-          <button onClick={pickWinner} className="form-btn">
+          {/* removing this while its public to avoid confusion */}
+          {/* <button onClick={pickWinner} className="form-btn">
             Pick a Winner
-          </button>
+          </button> */}
         </div>
       </form>
     </div>

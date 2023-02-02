@@ -13,6 +13,7 @@ const MantleLottery = () => {
   const [web3, setWeb3] = useState(null);
   const [lottery, setLottery] = useState(null);
   const [error, setError] = useState("");
+  const [connectStatus, setConnectStatus] = useState("Connect Wallet");
   const [manager, setManager] = useState("");
   const [balance, setBalance] = useState("");
   const [players, setPlayers] = useState([]);
@@ -50,6 +51,7 @@ const MantleLottery = () => {
         await window.ethereum.request({
           method: "eth_requestAccounts",
         });
+        setConnectStatus("Connected");
         // //Add web3 instance as react state
       } catch (err) {
         setError(err.message);
@@ -95,7 +97,7 @@ const MantleLottery = () => {
             </i>
           </p>
           <button className="form-btn" onClick={connectWalletHandler}>
-            Connect Wallet
+            {connectStatus}
           </button>
         </div>
         <hr className="dash-divider"></hr>
