@@ -87,6 +87,13 @@ const MantleLottery = () => {
             </a>
             !
           </p>
+          <p className="list-callout">
+            <i>
+              Please note this lottery has no financial value. The only award is
+              is $BIT on Mantle testnet. This is an experimental dApp for Mantle
+              testnet!
+            </i>
+          </p>
           <button className="form-btn" onClick={connectWalletHandler}>
             Connect Wallet
           </button>

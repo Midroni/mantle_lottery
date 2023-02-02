@@ -59,12 +59,14 @@ const LotteryInstructions = ({ lottery, web3, fetchData }) => {
           </i>
         </li>
         <li>
-          Enter an amount of $BIT in the field below to submit it to the lottery
-          (min = 0.001 $BIT)
+          Enter 1 $BIT into the lottery contract.
           <i>
             <p className="list-callout">
-              $BIT is the native token on Mantle. If you need test tokens you
-              can visit our{" "}
+              $BIT is the native token on Mantle. Adding more than 1 $BIT will
+              not increase your chance of winning the lottery
+            </p>
+            <p className="list-callout">
+              If you need test tokens you can visit our{" "}
               <a target="_blank" href="https://faucet.testnet.mantle.xyz/">
                 Testnet Faucet
               </a>{" "}
@@ -82,8 +84,8 @@ const LotteryInstructions = ({ lottery, web3, fetchData }) => {
           a pseudo-random winner
           <i>
             <p className="list-callout">
-              Please note that this smart contract has no concept of
-              proportional odds{" "}
+              We recommend only adding 1 $BIT, as this smart contract has no
+              concept of proportional odds{" "}
             </p>
           </i>
         </li>
